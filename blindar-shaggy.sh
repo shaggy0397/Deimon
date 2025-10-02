@@ -75,9 +75,8 @@ git commit -m "Versión blindada repo-ready de Shaggy"
 git branch -M main
 git push -u origin main
 
-# 7. Activar GitHub Pages
-echo "🌐 Activando GitHub Pages..."
-git checkout -b gh-pages
-git push origin gh-pages
+# 7. Activar GitHub Pages desde rama main
+echo "🌐 Activando GitHub Pages desde rama main..."
+echo "✅ Ve a Settings → Pages y selecciona 'main' como fuente de publicación."
 
 echo "✅ Blindaje completado. App publicada en DEIMON-. QR generado en qr.png"
