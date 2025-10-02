@@ -1,0 +1,3 @@
+#!/data/data/com.termux/files/usr/bin/bash
+figlet "Hola DEIMON"
+echo "CLI lista para compilar."

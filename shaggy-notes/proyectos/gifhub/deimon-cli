@@ -1,0 +1,37 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+APP_NAME="GifHub"
+PROJECT_DIR="$HOME/shaggy-notes/proyectos/gifhub"
+APK_OUT="$PROJECT_DIR/build/outputs/apk/release/app-release.apk"
+KEYSTORE="$HOME/.keys/gifhub.keystore"
+ALIAS="gifhubkey"
+
+# 🎨 Arte visual
+echo -e "\e[38;5;51m"
+figlet "$APP_NAME Build"
+echo -e "\e[0m"
+
+# 📁 Validar estructura
+echo "🔍 Validando carpetas..."
+[[ -d "$PROJECT_DIR" ]] || { echo "❌ Proyecto no encontrado."; exit 1; }
+mkdir -p "$(dirname "$APK_OUT")"
+
+# ⚙️ Simular compilación (reemplaza con tu build real si usas Gradle)
+echo "📦 Compilando APK..."
+echo "APK simulado para $APP_NAME" > "$APK_OUT"
+
+# 🔐 Firma (si existe keystore)
+if [[ -f "$KEYSTORE" ]]; then
+  echo "🔐 Firmando APK..."
+  apksigner sign --ks "$KEYSTORE" --ks-key-alias "$ALIAS" "$APK_OUT" && echo "✅ Firma completada."
+else
+  echo "⚠️ Keystore no encontrado. Saltando firma."
+fi
+
+# 📲 Instalar APK
+echo "📲 Instalando APK..."
+pm install -r "$APK_OUT" && echo "✅ Instalación exitosa." || echo "❌ Error al instalar."
+
+# 🧪 Validación visual
+echo -e "\n📁 Contenido final:"
+ls -lh "$APK_OUT"

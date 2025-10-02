@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHAGGY Digital Mind</title>
+  <link rel="manifest" href="manifest.json" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .title-gradient {
+      background: linear-gradient(to right, #6366f1, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .pulse-rect {
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-200 p-4">
+  <h1 class="text-3xl font-bold mb-4 title-gradient">SHAGGY Digital Mind</h1>
+
+  <div class="mb-6">
+    <textarea id="noteInput" rows="4" class="w-full p-2 bg-gray-800 text-gray-100 rounded" placeholder="Escribe o dicta tu nota..."></textarea>
+    <div class="flex gap-2 mt-2">
+      <button onclick="saveNote()" class="bg-indigo-600 px-4 py-2 rounded hover:bg-indigo-700">Guardar Nota</button>
+      <button onclick="startDictation()" class="bg-pink-600 px-4 py-2 rounded hover:bg-pink-700 pulse-rect">🎙️ Grabar Voz</button>
+      <button onclick="clearNotes()" class="bg-red-600 px-4 py-2 rounded hover:bg-red-700">🧹 Borrar Memoria</button>
+    </div>
+    <p id="status" class="mt-2 text-sm text-green-400"></p>
+  </div>
+
+  <div class="mb-6">
+    <input id="userInput" type="text" class="w-full p-2 bg-gray-800 text-gray-100 rounded" placeholder="Escribe tu mensaje..." />
+    <button onclick="handleChat()" class="mt-2 bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Enviar</button>
+  </div>
+
+  <div id="chatWindow" class="space-y-2"></div>
+
+  <script>
+    let notes = [];
+
+    function saveNote() {
+      const note = document.getElementById("noteInput").value.trim();
+      if (note) {
+        notes.push(note);
+        localStorage.setItem("shaggyNotes", JSON.stringify(notes));
+        document.getElementById("noteInput").value = "";
+        document.getElementById("status").textContent = "✅ ¡Guardada!";
+      }
+    }
+
+    function startDictation() {
+      const recognition = new webkitSpeechRecognition();
+      recognition.lang = "es-MX";
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        document.getElementById("noteInput").value += transcript;
+      };
+      recognition.start();
+    }
+
+    function clearNotes() {
+      notes = [];
+      localStorage.removeItem("shaggyNotes");
+      document.getElementById("status").textContent = "🧼 Memoria limpiada";
+    }
+
+    function handleChat() {
+      const input = document.getElementById("userInput").value.trim();
+      if (!input) return;
+      addMessageToChat("Tú", input, "bg-indigo-700");
+      addTypingIndicator();
+
+      const context = notes.join("\n");
+      const prompt = `Notas:\n${context}\n\nUsuario: ${input}\nSHAGGY:`;
+
+      callGeminiTextAPI(prompt).then(response => {
+        removeTypingIndicator();
+        addMessageToChat("SHAGGY", response, "bg-gray-700");
+        speakText(response);
+      });
+    }
+
+    function addMessageToChat(sender, text, bgColor) {
+      const chatWindow = document.getElementById("chatWindow");
+      const message = document.createElement("div");
+      message.className = `p-2 rounded ${bgColor}`;
+      message.innerHTML = `<strong>${sender}:</strong> ${text}`;
+      chatWindow.appendChild(message);
+    }
+
+    function addTypingIndicator() {
+      const chatWindow = document.getElementById("chatWindow");
+      const indicator = document.createElement("div");
+      indicator.id = "typingIndicator";
+      indicator.className = "text-gray-400 italic";
+      indicator.textContent = "SHAGGY está pensando...";
+      chatWindow.appendChild(indicator);
+    }
+
+    function removeTypingIndicator() {
+      const indicator = document.getElementById("typingIndicator");
+      if (indicator) indicator.remove();
+    }
+
+    async function callGeminiTextAPI(prompt) {
+      return new Promise(resolve => {
+        setTimeout(() => {
+          resolve("Aquí está tu respuesta basada en las notas.");
+        }, 1500);
+      });
+    }
+
+    function speakText(text) {
+      const synth = window.speechSynthesis;
+      synth.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = "es-MX";
+      synth.speak(utter);
+    }
+
+    window.addEventListener("load", () => {
+      const storedNotes = localStorage.getItem("shaggyNotes");
+      if (storedNotes) {
+        notes = JSON.parse(storedNotes);
+        document.getElementById("status").textContent = `🧠 ${notes.length} notas restauradas`;
+      }
+    });
+  </script>
+</body>
+</html>

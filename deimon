@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+PROYECTO="$1"
+BASE="$HOME/shaggy-notes/proyectos/$PROYECTO"
+SCRIPT="$BASE/deimon-cli"
+figlet "DEIMON: $PROYECTO"
+[[ -f "$SCRIPT" ]] && bash "$SCRIPT" || echo "❌ Proyecto no encontrado."

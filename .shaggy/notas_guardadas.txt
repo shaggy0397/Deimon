@@ -1,0 +1,3 @@
+2025-09-17 22:22:09 - bash $HOME/.shaggy/shaggy_guardar.sh
+2025-09-17 22:38:52 - tail -n 1 $HOME/.shaggy/notas_guardadas.txt
+2025-09-17 23:22:47 - p2c

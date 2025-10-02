@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- SH4C3Y v2.1: dashboard sin splash -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#00ffff" />
+  <title>SH4C3Y digital mind</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Validación: dashboard cargado correctamente -->git add dashboard.html
+git commit -m "🧠 Validación sintomática agregada al dashboard"
+git push origin main
+
+  <!-- Validación: dashboard cargado correctamente -->
+
+  <h1>SH4C3Y digital mind</h1>
+  <p>Tu asistente de memoria digital</p>
+
+
+  <section>
+    <h2>1. Escribe o dicta tu nota:</h2>
+    <input type="text" id="nota" placeholder="Ej: Venta a Julián: Astro-1 por $350 y Nova-X por $500" />
+    <br />
+    <button class="primary" onclick="guardarNota()">Analizar y Guardar Venta</button>
+    <button class="secondary" onclick="grabarVoz()">Grabar Voz</button>
+  </section>
+
+  <section class="preview">
+    <h2>Vista Previa de Venta</h2>
+    <p>Cliente: <span id="preview-cliente">--</span></p>
+    <p>Productos: <span id="preview-productos">--</span></p>
+    <p>Total: <span id="preview-total">--</span></p>
+    <p>Estado: <span id="preview-estado">--</span></p>
+  </section>
+
+  <section>
+    <h2>2. Registro de Ventas</h2>
+    <table>
+      <tr>
+        <th>Fecha</th><th>Cliente</th><th>Cant.</th><th>Total</th>
+      </tr>
+      <tr><td>30/9/2025</td><td>Desconocido</td><td>3</td><td class="total">$381.00</td></tr>
+      <tr><td>30/9/2025</td><td>Anita</td><td>3</td><td class="total">$872.00</td></tr>
+      <tr><td>28/9/2025</td><td>Fabiola</td><td>1</td><td class="total">$312.00</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Inventario</h2>
+    <p>Gestiona tus productos y sus precios para un análisis de ventas más preciso.</p>
+    <button class="primary" onclick="administrarProductos()">Administrar Productos</button>
+  </section>
+
+  <section>
+    <h2>4. Habla con DEIMON</h2>
+    <p>¡Hola! Soy DEIMON. Estoy listo para registrar y analizar tus ventas en tiempo real.</p>
+    <input type="text" id="pregunta" placeholder="Ej: ¿Qué ha pedido Julián?" />
+    <button class="chat" onclick="enviarPregunta()">Enviar</button>
+  </section>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('✅ Service Worker registrado'))
+        .catch(error => console.error('❌ Error al registrar SW:', error));
+    }
+  </script>
+<!-- Validación: dashboard cargado correctamente -->
+<!-- Validación: dashboard cargado correctamente -->
+</body>
+</html>

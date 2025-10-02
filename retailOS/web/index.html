@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🛍️ retailOS Web</title>
+  <style>
+    body { font-family: monospace; background: #111; color: #0f0; padding: 20px; }
+    h1 { color: #0ff; }
+    .menu { display: flex; gap: 10px; margin-bottom: 20px; }
+    .btn { background: #222; border: 1px solid #0f0; padding: 10px; cursor: pointer; }
+    .btn:hover { background: #0f0; color: #000; }
+    .output { border: 1px dashed #0f0; padding: 10px; background: #000; }
+  </style>
+</head>
+<body>
+  <h1>🛍️ retailOS Web Interface</h1>
+  <div class="menu">
+    <div class="btn" onclick="run('orders')">🛒 Pedidos</div>
+    <div class="btn" onclick="run('payments')">💳 Pagos</div>
+    <div class="btn" onclick="run('inventory')">📦 Inventario</div>
+    <div class="btn" onclick="run('routes')">🛣️ Rutas</div>
+    <div class="btn" onclick="run('staff')">👥 Empleados</div>
+    <div class="btn" onclick="run('ai')">🎙️ Asistente AI</div>
+  </div>
+  <div class="output" id="output">Selecciona un módulo para comenzar...</div>
+
+  <script>
+    function run(mod) {
+      document.getElementById('output').innerText = `Ejecutando módulo '${mod}' desde bash...`;
+      fetch(`termux://run-module?name=${mod}`); // Simulado: reemplazar con integración real
+    }
+  </script>
+</body>
+</html>
