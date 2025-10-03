@@ -1,19 +1,14 @@
 {
-  "name": "Shaggy digital mind",
-  "short_name": "Shaggy",
-  "start_url": "./index.html",
+  "name": "DEIMON Interface",
+  "short_name": "DEIMON",
+  "start_url": "dashboard-deimon.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#00BFFF",
+  "background_color": "#0f0f2f",
+  "theme_color": "#6a5acd",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "deimon-icon.png",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
       "type": "image/png"
     }
   ]

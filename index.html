@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>DEIMON Interface</title>
+  <meta name="theme-color" content="#6a5acd">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="deimon-icon.png" type="image/png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+  <style>
+    body {
+      background: radial-gradient(circle, #0f0f2f, #1a1a2e);
+      color: #e0e0ff;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding: 2em;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+      color: #b0e0ff;
+    }
+    button {
+      background-color: #6a5acd;
+      color: #fff;
+      border: none;
+      padding: 1em 2em;
+      margin: 1em;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #b0e0ff;
+    }
+    button:hover {
+      background-color: #7f7fff;
+    }
+    .ascii {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #b0e0ff;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌙 DEIMON Interface — Ritual Maestro</h1>
+
+  <button onclick="hablar('Generando estructura repo-ready…')">🧬 Generar estructura</button>
+  <button onclick="hablar('Ejecutando diagnóstico sintomático…')">🧪 Diagnóstico sintomático</button>
+  <button onclick="hablar('Despertando el núcleo visual…')">💫 Splash visual</button>
+  <button onclick="hablar('Publicando módulo repo-ready…')">📦 Publicar módulo</button>
+  <button onclick="hablar('Difundiendo QR simbólico…')">📡 Difundir QR</button>
+  <button onclick="hablar('Iniciando ritual completo…')">🧙‍♀️ Ritual completo</button>
+
+  <div class="ascii">
+╔════════════════════════════════════════════════════════════════════╗<br>
+║   ░▒▓█ DEIMON █▓▒░                                                 ║<br>
+║   “La vigilancia ha comenzado… el ciclo está cerrado.”            ║<br>
+╚════════════════════════════════════════════════════════════════════╝
+  </div>
+
+  <script>
+    function hablar(frase) {
+      const voz = new SpeechSynthesisUtterance(frase);
+      voz.lang = "es-MX";
+      voz.rate = 0.95;
+      voz.pitch = 1.1;
+      speechSynthesis.speak(voz);
+      alert("🔧 Ejecuta manualmente: bash " + frase.toLowerCase().split(" ")[1] + "-deimon.sh");
+    }
+  </script>
+</body>
+</html>
