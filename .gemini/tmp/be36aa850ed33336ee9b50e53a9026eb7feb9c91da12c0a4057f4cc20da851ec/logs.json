@@ -1,0 +1,79 @@
+[
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 0,
+    "type": "user",
+    "message": "gemini.md",
+    "timestamp": "2025-10-08T07:19:09.647Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 1,
+    "type": "user",
+    "message": "~",
+    "timestamp": "2025-10-08T07:30:19.630Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 2,
+    "type": "user",
+    "message": "mkdir -p /storage/emulated/0/1A/Appinven/autoebook-hotmart\ncd /storage/emulated/0/1A/Appinven/autoebook-hotmart",
+    "timestamp": "2025-10-08T07:31:29.780Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 3,
+    "type": "user",
+    "message": "mv ~/gemini.md /storage/emulated/0/1A/Appinven/autoebook-hotmart/",
+    "timestamp": "2025-10-08T07:32:18.463Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 4,
+    "type": "user",
+    "message": "cd /storage/emulated/0/1A/Appinven/autoebook-hotmart\ngemini",
+    "timestamp": "2025-10-08T07:33:00.903Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 5,
+    "type": "user",
+    "message": "~",
+    "timestamp": "2025-10-08T07:35:35.752Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 6,
+    "type": "user",
+    "message": "~",
+    "timestamp": "2025-10-08T07:36:05.653Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 7,
+    "type": "user",
+    "message": "salir",
+    "timestamp": "2025-10-08T07:37:16.077Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 8,
+    "type": "user",
+    "message": "killall gemini",
+    "timestamp": "2025-10-08T07:37:34.784Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 9,
+    "type": "user",
+    "message": "~",
+    "timestamp": "2025-10-08T07:38:17.613Z"
+  },
+  {
+    "sessionId": "ef7fa0fd-3dc3-4ee7-9b1b-3077d2119c3a",
+    "messageId": 10,
+    "type": "user",
+    "message": "~",
+    "timestamp": "2025-10-08T08:30:40.442Z"
+  }
+]

@@ -1,0 +1,6 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+bin.equinox.io	0	1	1760042489	31536000
+shaggy0397.github.io	0	0	1760167808	31556952
+shaggy-digital-mind.netlify.app	0	1	1760095919	31536000

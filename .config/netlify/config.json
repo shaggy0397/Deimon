@@ -1,0 +1,16 @@
+{
+	"telemetryDisabled": false,
+	"cliId": "18728f83-cafe-4b3e-a4c3-c41f0686aea9",
+	"userId": "68e1d7a7694c74075507bffe",
+	"users": {
+		"68e1d7a7694c74075507bffe": {
+			"id": "68e1d7a7694c74075507bffe",
+			"name": "mario Moz",
+			"email": "deimonenterprise929@gmail.com",
+			"auth": {
+				"token": "nfc_AsP3ivGuEocqjHmWVsMjcesJ6jkAe2xF41ed",
+				"github": {}
+			}
+		}
+	}
+}

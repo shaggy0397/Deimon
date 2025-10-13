@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "",
+    "short_name": "Shaggy0397GithubIo",
+    "scope": "/Pwa-app11/manifest.json",
+    "display": "browser",
+    "start_url": "https://shaggy0397.github.io/Pwa-app11/manifest.json",
+    "background_color": "transparent",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
+}

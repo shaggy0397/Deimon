@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# 🚀 Lanzador táctil para empaquetar PWA como APK
+
+bash /data/data/com.termux/files/home/empaquetar-pwa.sh

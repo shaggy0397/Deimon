@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "pwabuilder": "^2.0.3-rc.1"
+  },
+  "_npx": {
+    "packages": [
+      "pwabuilder"
+    ]
+  }
+}

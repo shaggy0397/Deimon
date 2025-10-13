@@ -1,0 +1,8 @@
+────────────────────────────
+🖼️ Icono: https://www.google.com/search?q=https://placehold.co/192x192/4f46e5/ffffff%3Ftext%3DD
+❌ URL inválida: apunta a búsqueda
+✅ Propiedades completas: sizes, type, purpose
+────────────────────────────
+🖼️ Icono: https://www.google.com/search?q=https://placehold.co/512x512/4f46e5/ffffff%3Ftext%3DDEIMON
+❌ URL inválida: apunta a búsqueda
+✅ Propiedades completas: sizes, type, purpose

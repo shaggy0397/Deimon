@@ -1,0 +1,67 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+FECHA=$(date +"%Y-%m-%d %H:%M:%S")
+LOG=~/logs/deploy-history.log
+
+# Módulos esperados
+MODULOS=(
+  "pre-deploy-check.sh"
+  "update-dashboard.sh"
+  "deploy-if-changed.sh"
+  "generate-and-validate-icons.sh"
+)
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "🔍 REVISANDO MÓDULOS REPO-READY"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+# Crear módulo si no existe
+for MOD in "${MODULOS[@]}"; do
+  if [ ! -f "$MOD" ]; then
+    echo "⚠️ $MOD no encontrado. Generando..."
+    case "$MOD" in
+      "pre-deploy-check.sh")
+        curl -s https://raw.githubusercontent.com/deimon-core/scripts/main/pre-deploy-check.sh > "$MOD"
+        ;;
+      "update-dashboard.sh")
+        curl -s https://raw.githubusercontent.com/deimon-core/scripts/main/update-dashboard.sh > "$MOD"
+        ;;
+      "deploy-if-changed.sh")
+        curl -s https://raw.githubusercontent.com/deimon-core/scripts/main/deploy-if-changed.sh > "$MOD"
+        ;;
+      "generate-and-validate-icons.sh")
+        curl -s https://raw.githubusercontent.com/deimon-core/scripts/main/generate-and-validate-icons.sh > "$MOD"
+        ;;
+    esac
+    chmod +x "$MOD"
+    echo "✅ $MOD generado y activado"
+  else
+    echo "✅ $MOD ya está presente"
+  fi
+done
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "🧩 EJECUTANDO GENERADOR DE ÍCONOS"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+./generate-and-validate-icons.sh
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "🔐 EJECUTANDO DEPLOY CON CAMBIOS"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+./deploy-if-changed.sh
+
+if [ $? -eq 0 ]; then
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  echo "📊 ACTUALIZANDO DASHBOARD"
+  echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  ./update-dashboard.sh
+else
+  echo "❌ Deploy fallido. Dashboard no actualizado."
+  echo "$FECHA | DASHBOARD ❌ | Deploy fallido" >> "$LOG"
+fi
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄     "
+echo "    █░ CICLO COMPLETO ✅ ░█"
+echo "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█    "
+echo "📜 Log registrado en $LOG"

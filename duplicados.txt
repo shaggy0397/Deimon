@@ -1,0 +1,80 @@
+043e04caa9ae6c403a98a9a9bb5ad410  /storage/emulated/0/DEIMON_CORE/logs/por_fecha/2025-10-09/resumen-global.csv
+077631a4a3585f456e0b8006e17d4f06  /storage/emulated/0/DEIMON_CORE/nichos/Productividad/Productividad-ebook/README.md
+083dec272c4d70de929c41c91414331f  /storage/emulated/0/1A/Appinven/.deimon-tmp/verificador.log
+0ff2742a1b85a6abfcc6c6bb5808bd51  /storage/emulated/0/DEIMON_CORE/logs/dashboard.html
+100c639dd79cf99fd64649a87147d803  /storage/emulated/0/1A/Appinven/autoebook-hotmart/generar_apk.sh
+14db196a5f1b2caab4dffa7112909cae  /storage/emulated/0/1A/Appinven/autoebook-hotmart/publicar.sh
+15287ee9e2bcf22c945b5ba7b912e01f  /storage/emulated/0/1A/Appinven/autoebook-hotmart/obtener_token.sh
+1c55e59f0023e6ef0faf170b2a0fbb0a  /storage/emulated/0/DEIMON_CORE/nichos/Finanzas Personales/resumen.txt
+1ffdcb68835b6270ca588d68e088e856  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Desarrollo Personal-ebook/ebook.pdf
+2023faa841405b55c94ef2ff204c2ef7  /storage/emulated/0/1A/Appinven/autoebook-hotmart/validar_lote.sh
+278169240d8cedaccab3ba1cd7e3f8ca  /storage/emulated/0/1A/Appinven/autoebook-hotmart/apk_Desarrollo Personal/assets/index.html
+2f93a3ec59243f43f06fc568430eb32f  /storage/emulated/0/1A/Appinven/autoebook-hotmart/auth_hotmart.sh
+3207c7982e003104fed4c2d3666029ce  /storage/emulated/0/DEIMON_CORE/nichos/Marketing Digital/README.md
+3ae2082786ea6d411d4dc4075655ebbe  /storage/emulated/0/DEIMON_CORE/nichos/Finanzas Personales/Finanzas_Personales-ebook/README.md
+3b7e2ab9a8ef912234e203d264aa217b  /storage/emulated/0/DEIMON_CORE/nichos/Marketing Digital/Marketing_Digital-ebook.zip
+3fae737d9c96c31f6b7591be8e8dba0a  /storage/emulated/0/DEIMON_CORE/nichos/Productividad/resumen.txt
+4422a7eb057163d33defa79ef2ae7859  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Productividad-ebook.zip
+46bfc286e03dd2530097e4a579b18000  /storage/emulated/0/1A/Appinven/autoebook-hotmart/log.txt
+46e8f3ca508fcc157432a162e59cba17  /storage/emulated/0/DEIMON_CORE/nichos/Finanzas Personales/Finanzas_Personales-ebook.zip
+474c27b4175fd09ba43df0e8517eedd9  /storage/emulated/0/1A/Appinven/autoebook-hotmart/regenerar_faltantes.sh
+4bb30cdc77c914b70c86fa81f46ef6d1  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Desarrollo Personal-ebook/README.md
+4fd8fe900fa43921f7caabe355c1994d  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Desarrollo Personal-ebook.zip
+523463f769a7a764ac4819e36ebff3fe  /storage/emulated/0/1A/Appinven/autoebook-hotmart/ngrok_lanzador.sh
+57a078ed288bf15b02871c9967eec8c4  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Desarrollo Personal.zip
+5e0bea36624394dda5609d53a35e1bd8  /storage/emulated/0/DEIMON_CORE/nichos/ebook.pdf
+5f52dbefcf63c9f677ace09fcf8bc7d8  /storage/emulated/0/1A/Appinven/.deimon-tmp/_redirects
+657f4556e4d8a46fb51e6814640d0c3c  /storage/emulated/0/1A/Appinven/autoebook-hotmart/ebook.pdf
+68b329da9893e34099c7d8ad5cb9c940  /storage/emulated/0/1A/Appinven/logs/publicacion-hotmart.log
+68ce591240252d1fcbda54b2debe3117  /storage/emulated/0/1A/Appinven/autoebook-hotmart/webhook.php
+6ac42b3e80d444eab30e1d28278143ba  /storage/emulated/0/1A/Appinven/autoebook-hotmart/validar_entorno.sh
+72919ff5e67da38b2fc7c07a17bd65db  /storage/emulated/0/1A/Appinven/autoebook-hotmart/temas.txt
+737bf914cbff6799a051c1115063c675  /storage/emulated/0/1A/Appinven/autoebook-hotmart/compartir.sh
+78f0fac3329b41e40e60e5083a519179  /storage/emulated/0/1A/Appinven/.deimon-tmp/deploy-qr.txt
+793febb266c4c3c660ff43052cff6d74  /storage/emulated/0/1A/Appinven/autoebook-hotmart/entregar_zip.sh
+803a5b4bc6b60e9f09d707e71a781bb3  /storage/emulated/0/1A/Appinven/autoebook-hotmart/ebook.md
+806f03099ade06eb153f3226544ded60  /storage/emulated/0/DEIMON_CORE/nichos/Inteligencia Artificial/resumen.txt
+878efc8032ad88d3942a6e68f53b7676  /storage/emulated/0/1A/Appinven/autoebook-hotmart/README.txt
+887ab63984d209864770b031cbcf915e  /storage/emulated/0/DEIMON_CORE/nichos/Inteligencia Artificial/README.md
+8b18d0a33e25aa76bd9efec54c1c8586  /storage/emulated/0/1A/Appinven/autoebook-hotmart/crear_keystore.sh
+8be3b171414e560d9323ba8e374cf4ad  /storage/emulated/0/1A/Appinven/autoebook-hotmart/firmar_apk.sh
+8c1af76a1d09d4187ae99ef3f38b47a0  /storage/emulated/0/1A/Appinven/autoebook-hotmart/validar_zip.sh
+8dbda040a92055429bbc650a92e49b21  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Marketing Digital-ebook.zip
+920ca76f3692eda02be694ef072cf0ee  /storage/emulated/0/1A/Appinven/autoebook-hotmart/blindaje.sh
+92261fd7d2e78ea16d376583d529782c  /storage/emulated/0/DEIMON_CORE/nichos/Finanzas Personales/Finanzas_Personales-ebook/product.json
+950a539377045b37cbc9f624e066f729  /storage/emulated/0/1A/Appinven/autoebook-hotmart/diagnostico_entorno.sh
+9ba90e58d997e02a96e24927743b854c  /storage/emulated/0/1A/Appinven/autoebook-hotmart/liberar_puerto.sh
+a0f7d86303146df7525b5fd35e7f0e86  /storage/emulated/0/DEIMON_CORE/nichos/Inteligencia Artificial/Inteligencia_Artificial-ebook.zip
+a15bf06e012556ea3efc35cf60f94e0c  /storage/emulated/0/1A/Appinven/.deimon-tmp/netlify.toml
+a26736a922a00dca5217088cee780819  /storage/emulated/0/1A/Appinven/autoebook-hotmart/my-release-key.jks
+a289ac0a53e266ed08eb54eb0657b58d  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Finanzas Personales-ebook.zip
+a33f489f8587f64f2a84ee7fd4cccc7a  /storage/emulated/0/1A/Appinven/autoebook-hotmart/ebook_Desarrollo Personal.html
+a405ab3a075f2933d7a2d53e88c85a50  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Desarrollo Personal-ebook/estado.txt
+aae19a88200dedf46a45f02991a36795  /storage/emulated/0/1A/Appinven/autoebook-hotmart/empaquetar.sh
+abaa35c1330a87d9e8aee0ada998381a  /storage/emulated/0/1A/Appinven/autoebook-hotmart/validar_apk.sh
+abe4c3b12924abfdd26bfcfaf2eaaebc  /storage/emulated/0/1A/Appinven/autoebook-hotmart/gemini.md
+acf12db414756dd3f3f8cd92e7de9559  /storage/emulated/0/DEIMON_CORE/backup_jsons/Productividad_es (1)/product_es.json
+ad407aac6f96c77afc2d719ef075eb08  /storage/emulated/0/DEIMON_CORE/logs/por_fecha/2025-10-09/resumen-global.txt
+b0f074739241b78c7e1b7716058ea465  /storage/emulated/0/1A/Appinven/autoebook-hotmart/menu_lote.sh
+b5b1ff1f61e0cf10433bacedb05774cc  /storage/emulated/0/DEIMON_CORE/nichos/Desarrollo Personal/resumen.txt
+b7889b2405599af20cdb2d26611f269d  /storage/emulated/0/1A/Appinven/autoebook-hotmart/diagnostico.sh
+b86d38774dd71d23f910bf23dd6cc624  /storage/emulated/0/1A/Appinven/autoebook-hotmart/lote.sh
+bba470d141c6a582b5c7878c642accd1  /storage/emulated/0/1A/Appinven/.deimon-tmp/service-worker.js
+bf67458579ce002871516795c266d3d3  /storage/emulated/0/1A/Appinven/autoebook-hotmart/instalar.sh
+c0effd4dc5692a320ef7e0e288be12f1  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Inteligencia Artificial-ebook.zip
+c42e532ac7e08b0fb3edc9eaec5c6bc8  /storage/emulated/0/1A/Appinven/autoebook-hotmart/instalar_apk.sh
+c4b832691ff4375058e80834666cb02f  /storage/emulated/0/1A/Appinven/autoebook-hotmart/generar_ebook.sh
+c85c40bb0faf8813c6e68954b87c46e9  /storage/emulated/0/DEIMON_CORE/nichos/Marketing Digital/resumen.txt
+cc36aaa17fde258883a496fbff87eec1  /storage/emulated/0/1A/Appinven/.deimon-tmp/manifest.json
+ce0a5a983bd8b45ceac2d87d17175d87  /storage/emulated/0/DEIMON_CORE/nichos/Productividad/Productividad-ebook/product.json
+d41d8cd98f00b204e9800998ecf8427e  /storage/emulated/0/1A/Appinven/autoebook-hotmart/Desarrollo Personal.apk
+dae128dd2e7c47a249344b1f7c18718d  /storage/emulated/0/1A/Appinven/.deimon-tmp/verificador.png
+e0552cfb930ae3d9bf40843e403995fc  /storage/emulated/0/1A/Appinven/autoebook-hotmart/detectar_tendencia.sh
+e190291ba6efc3e3d43d80dbe00e6729  /storage/emulated/0/1A/Appinven/autoebook-hotmart/.zip
+e66b28040de49678882a881c8382f2c2  /storage/emulated/0/1A/Appinven/autoebook-hotmart/iniciar.sh
+e68494c94e60dace293d36767841140c  /storage/emulated/0/1A/Appinven/autoebook-hotmart/ngrok-stable-linux-arm.zip
+ea022f2cecae7e04dd6b78b26d7d68d8  /storage/emulated/0/1A/Appinven/autoebook-hotmart/menu.sh
+ecac70ed9371253c7a3e153f022346d1  /storage/emulated/0/1A/Appinven/autoebook-hotmart/validadores.sh
+eda4272d13a45d37a00337a9399f40ac  /storage/emulated/0/1A/Appinven/.deimon-tmp/sw.js
+f2c7408567d5d772be97211f043f219d  /storage/emulated/0/DEIMON_CORE/nichos/Desarrollo Personal/README.md
+f69e4038ef40b1d6fc60843d0bf9126f  /storage/emulated/0/1A/Appinven/.deimon-tmp/deimon-net.sh

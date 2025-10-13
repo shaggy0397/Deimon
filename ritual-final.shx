@@ -1,0 +1,14 @@
+echo "Selecciona una opción:"
+echo "1️⃣ Validar JDK"
+echo "2️⃣ Empaquetar PWA → APK"
+echo "3️⃣ Generar QR + copiar ruta"
+echo "4️⃣ Registrar en log visual"
+echo "5️⃣ Ejecutar todo el ritual"
+echo "6️⃣ Verificar manifest remoto"
+echo "0️⃣ Salir"
+bash ~/ritual-final.sh
+
+6)
+    echo "🧪 Verificando manifest remoto..."
+    bash ~/verificar-manifest.sh
+    ;;

@@ -1,0 +1,1 @@
+❌ El manifest.json no está accesible públicamente

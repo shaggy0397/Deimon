@@ -1,0 +1,2 @@
+✅ Renombrado: dei.html → index.html
+🔍 Espera unos segundos y abre: https://shaggy0397.github.io/Pwa-app11/

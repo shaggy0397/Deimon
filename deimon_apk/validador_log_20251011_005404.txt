@@ -1,0 +1,2 @@
+❌ Sitio no responde: https://shaggy0397.github.io/Pwa-app11/
+❌ manifest.json no accesible: https://shaggy0397.github.io/Pwa-app11/manifest.json

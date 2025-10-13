@@ -1,0 +1,255 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.6.0
+2 info using node@v24.9.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 warn config production Use `--omit=dev` instead.
+5 silly config load:file:/storage/emulated/0/app11/Shaggy0397GithubIo/cordova/.npmrc
+6 silly config load:file:/data/data/com.termux/files/home/.npmrc
+7 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+8 verbose title npm install cordova-ios@~4.5.4
+9 verbose argv "install" "cordova-ios@~4.5.4" "--production" "--save"
+10 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-10-11T07_24_34_565Z-
+11 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-10-11T07_24_34_565Z-debug-0.log
+12 silly logfile start cleaning logs, removing 1 files
+13 silly packumentCache heap:1061158912 maxSize:265289728 maxEntrySize:132644864
+14 silly logfile done cleaning log files
+15 silly idealTree buildDeps
+16 silly fetch manifest cordova-ios@~4.5.4
+17 silly packumentCache full:https://registry.npmjs.org/cordova-ios cache-miss
+18 http cache https://registry.npmjs.org/cordova-ios 120ms (cache hit)
+19 silly packumentCache full:https://registry.npmjs.org/cordova-ios set size:10765865 disposed:false
+20 silly placeDep ROOT cordova-ios@4.5.5 OK for: io_github_shaggy0397.pwabuilder@1.0.0 want: ~4.5.4
+21 silly reify moves {}
+22 http cache cordova-ios@https://registry.npmjs.org/cordova-ios/-/cordova-ios-4.5.5.tgz 0ms (cache hit)
+23 silly audit bulk request {
+23 silly audit   'cordova-plugin-hostedwebapp': [ '0.3.1' ],
+23 silly audit   'cordova-plugin-whitelist': [ '1.3.5' ],
+23 silly audit   'cordova-ios': [ '4.5.5' ],
+23 silly audit   'balanced-match': [ '1.0.0' ],
+23 silly audit   abbrev: [ '1.1.1' ],
+23 silly audit   'base64-js': [ '1.2.0', '1.1.2' ],
+23 silly audit   'bplist-parser': [ '0.1.1', '0.0.6' ],
+23 silly audit   ansi: [ '0.3.1' ],
+23 silly audit   'brace-expansion': [ '1.1.11' ],
+23 silly audit   'cordova-registry-mapper': [ '1.1.15' ],
+23 silly audit   'concat-map': [ '0.0.1' ],
+23 silly audit   'bplist-creator': [ '0.0.7' ],
+23 silly audit   'big-integer': [ '1.6.32' ],
+23 silly audit   elementtree: [ '0.1.6' ],
+23 silly audit   'cordova-common': [ '2.2.5' ],
+23 silly audit   inherits: [ '2.0.3' ],
+23 silly audit   glob: [ '5.0.15' ],
+23 silly audit   'ios-sim': [ '6.1.3' ],
+23 silly audit   nopt: [ '1.0.9', '3.0.6' ],
+23 silly audit   minimatch: [ '3.0.4' ],
+23 silly audit   inflight: [ '1.0.6' ],
+23 silly audit   'path-is-absolute': [ '1.0.1' ],
+23 silly audit   sax: [ '0.3.5' ],
+23 silly audit   q: [ '1.5.1' ],
+23 silly audit   once: [ '1.4.0' ],
+23 silly audit   plist: [ '2.1.0', '2.0.1' ],
+23 silly audit   shelljs: [ '0.5.3', '0.2.6' ],
+23 silly audit   'simple-plist': [ '0.2.1' ],
+23 silly audit   tail: [ '0.4.0' ],
+23 silly audit   'stream-buffers': [ '2.2.0' ],
+23 silly audit   uuid: [ '3.0.1' ],
+23 silly audit   unorm: [ '1.4.1' ],
+23 silly audit   simctl: [ '1.1.1' ],
+23 silly audit   wrappy: [ '1.0.2' ],
+23 silly audit   underscore: [ '1.9.1' ],
+23 silly audit   xmldom: [ '0.1.27' ],
+23 silly audit   xmlbuilder: [ '8.2.2' ],
+23 silly audit   xcode: [ '0.9.3' ],
+23 silly audit   'xml-escape': [ '1.1.0' ]
+23 silly audit }
+24 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 498ms
+25 silly audit report {
+25 silly audit report   'brace-expansion': [
+25 silly audit report     {
+25 silly audit report       id: 1105443,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-v6h2-p8h4-qcjw',
+25 silly audit report       title: 'brace-expansion Regular Expression Denial of Service vulnerability',
+25 silly audit report       severity: 'low',
+25 silly audit report       vulnerable_versions: '>=1.0.0 <=1.1.11',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ],
+25 silly audit report   minimatch: [
+25 silly audit report     {
+25 silly audit report       id: 1096485,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-f8q6-p94x-37v3',
+25 silly audit report       title: 'minimatch ReDoS vulnerability',
+25 silly audit report       severity: 'high',
+25 silly audit report       vulnerable_versions: '<3.0.5',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ],
+25 silly audit report   plist: [
+25 silly audit report     {
+25 silly audit report       id: 1095138,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-4cpg-3vgw-4877',
+25 silly audit report       title: 'Prototype pollution in Plist before 3.0.5 can cause denial of service',
+25 silly audit report       severity: 'critical',
+25 silly audit report       vulnerable_versions: '<3.0.5',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ],
+25 silly audit report   shelljs: [
+25 silly audit report     {
+25 silly audit report       id: 1088208,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-64g7-mvw6-v9qj',
+25 silly audit report       title: 'Improper Privilege Management in shelljs',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '<0.8.5',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1095126,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-4rq4-32rv-6wp6',
+25 silly audit report       title: 'Improper Privilege Management in shelljs',
+25 silly audit report       severity: 'high',
+25 silly audit report       vulnerable_versions: '<0.8.5',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ],
+25 silly audit report   'simple-plist': [
+25 silly audit report     {
+25 silly audit report       id: 1095124,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-gff7-g5r8-mg8m',
+25 silly audit report       title: 'Prototype Pollution in simple-plist',
+25 silly audit report       severity: 'critical',
+25 silly audit report       vulnerable_versions: '<1.3.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ],
+25 silly audit report   underscore: [
+25 silly audit report     {
+25 silly audit report       id: 1095097,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-cf4h-3jhx-xvhq',
+25 silly audit report       title: 'Arbitrary Code Execution in underscore',
+25 silly audit report       severity: 'critical',
+25 silly audit report       vulnerable_versions: '>=1.3.2 <1.12.1',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ],
+25 silly audit report   xmldom: [
+25 silly audit report     {
+25 silly audit report       id: 1096547,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-5fg8-2547-mr8q',
+25 silly audit report       title: 'Misinterpretation of malicious XML input',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '<=0.6.0',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1090199,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-h6q6-9hqw-rwfv',
+25 silly audit report       title: 'Misinterpretation of malicious XML input',
+25 silly audit report       severity: 'moderate',
+25 silly audit report       vulnerable_versions: '<0.5.0',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     },
+25 silly audit report     {
+25 silly audit report       id: 1091573,
+25 silly audit report       url: 'https://github.com/advisories/GHSA-crh6-fp67-6883',
+25 silly audit report       title: 'xmldom allows multiple root nodes in a DOM',
+25 silly audit report       severity: 'critical',
+25 silly audit report       vulnerable_versions: '<=0.6.0',
+25 silly audit report       cwe: [Array],
+25 silly audit report       cvss: [Object]
+25 silly audit report     }
+25 silly audit report   ]
+25 silly audit report }
+26 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion cache-miss
+27 silly packumentCache corgi:https://registry.npmjs.org/minimatch cache-miss
+28 silly packumentCache corgi:https://registry.npmjs.org/plist cache-miss
+29 silly packumentCache corgi:https://registry.npmjs.org/shelljs cache-miss
+30 silly packumentCache corgi:https://registry.npmjs.org/simple-plist cache-miss
+31 silly packumentCache corgi:https://registry.npmjs.org/underscore cache-miss
+32 silly packumentCache corgi:https://registry.npmjs.org/xmldom cache-miss
+33 http cache https://registry.npmjs.org/simple-plist 761ms (cache hit)
+34 silly packumentCache corgi:https://registry.npmjs.org/simple-plist set size:22612 disposed:false
+35 verbose stack Error: EACCES: permission denied, symlink '../ios-sim/bin/ios-sim' -> '/storage/emulated/0/app11/Shaggy0397GithubIo/cordova/node_modules/cordova-ios/node_modules/.bin/ios-sim'
+35 verbose stack     at async symlink (node:internal/fs/promises:1009:10)
+35 verbose stack     at async Promise.all (index 0)
+35 verbose stack     at async Promise.all (index 0)
+35 verbose stack     at async #createBinLinks (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:396:5)
+35 verbose stack     at async Promise.allSettled (index 0)
+35 verbose stack     at async #linkAllBins (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:377:5)
+35 verbose stack     at async #build (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:162:7)
+35 verbose stack     at async Arborist.rebuild (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:62:5)
+35 verbose stack     at async [reifyPackages] (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:332:11)
+35 verbose stack     at async Arborist.reify (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:137:5)
+36 error code EACCES
+37 error syscall symlink
+38 error path ../ios-sim/bin/ios-sim
+39 error dest /storage/emulated/0/app11/Shaggy0397GithubIo/cordova/node_modules/cordova-ios/node_modules/.bin/ios-sim
+40 error errno -13
+41 error Error: EACCES: permission denied, symlink '../ios-sim/bin/ios-sim' -> '/storage/emulated/0/app11/Shaggy0397GithubIo/cordova/node_modules/cordova-ios/node_modules/.bin/ios-sim'
+41 error     at async symlink (node:internal/fs/promises:1009:10)
+41 error     at async Promise.all (index 0)
+41 error     at async Promise.all (index 0)
+41 error     at async #createBinLinks (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:396:5)
+41 error     at async Promise.allSettled (index 0)
+41 error     at async #linkAllBins (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:377:5)
+41 error     at async #build (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:162:7)
+41 error     at async Arborist.rebuild (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:62:5)
+41 error     at async [reifyPackages] (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:332:11)
+41 error     at async Arborist.reify (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:137:5) {
+41 error   errno: -13,
+41 error   code: 'EACCES',
+41 error   syscall: 'symlink',
+41 error   path: '../ios-sim/bin/ios-sim',
+41 error   dest: '/storage/emulated/0/app11/Shaggy0397GithubIo/cordova/node_modules/cordova-ios/node_modules/.bin/ios-sim'
+41 error }
+42 error
+42 error The operation was rejected by your operating system.
+42 error It is likely you do not have the permissions to access this file as the current user
+42 error
+42 error If you believe this might be a permissions issue, please double-check the
+42 error permissions of the file and its containing directories, or try running
+42 error the command again as root/Administrator.
+43 silly unfinished npm timer reify 1760167475204
+44 silly unfinished npm timer reify:audit 1760167478771
+45 silly unfinished npm timer reify:build 1760167478849
+46 silly unfinished npm timer build 1760167478850
+47 silly unfinished npm timer build:deps 1760167478850
+48 silly unfinished npm timer build:link 1760167478866
+49 silly unfinished npm timer build:link:node_modules/cordova-ios/node_modules/ios-sim 1760167478866
+50 silly unfinished npm timer build:link:node_modules/cordova-ios/node_modules/nopt 1760167478868
+51 silly unfinished npm timer build:link:node_modules/cordova-ios/node_modules/shelljs 1760167478868
+52 silly unfinished npm timer build:link:node_modules/cordova-ios/node_modules/uuid 1760167478868
+53 silly unfinished npm timer build:link:node_modules/cordova-ios/node_modules/ios-sim/node_modules/nopt 1760167478868
+54 silly unfinished npm timer build:link:node_modules/cordova-ios/node_modules/simctl/node_modules/shelljs 1760167478868
+55 silly unfinished npm timer auditReport:init 1760167479322
+56 silly unfinished npm timer metavuln:calculate:security-advisory:brace-expansion:1105443 1760167479323
+57 silly unfinished npm timer metavuln:packument:brace-expansion 1760167479328
+58 silly unfinished npm timer metavuln:calculate:security-advisory:minimatch:1096485 1760167479333
+59 silly unfinished npm timer metavuln:packument:minimatch 1760167479335
+60 silly unfinished npm timer metavuln:calculate:security-advisory:plist:1095138 1760167479337
+61 silly unfinished npm timer metavuln:packument:plist 1760167479338
+62 silly unfinished npm timer metavuln:calculate:security-advisory:shelljs:1088208 1760167479341
+63 silly unfinished npm timer metavuln:packument:shelljs 1760167479342
+64 silly unfinished npm timer metavuln:calculate:security-advisory:shelljs:1095126 1760167479345
+65 silly unfinished npm timer metavuln:calculate:security-advisory:underscore:1095097 1760167479349
+66 silly unfinished npm timer metavuln:packument:underscore 1760167479350
+67 silly unfinished npm timer metavuln:calculate:security-advisory:xmldom:1096547 1760167479352
+68 silly unfinished npm timer metavuln:packument:xmldom 1760167479353
+69 silly unfinished npm timer metavuln:calculate:security-advisory:xmldom:1090199 1760167479356
+70 silly unfinished npm timer metavuln:calculate:security-advisory:xmldom:1091573 1760167479356
+71 verbose cwd /storage/emulated/0/app11/Shaggy0397GithubIo/cordova
+72 verbose os Linux 4.14.186+
+73 verbose node v24.9.0
+74 verbose npm  v11.6.0
+75 verbose exit -13
+76 verbose code -13
+77 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2025-10-11T07_24_34_565Z-debug-0.log

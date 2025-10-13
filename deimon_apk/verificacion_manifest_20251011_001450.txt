@@ -1,0 +1,2 @@
+✅ manifest.json ya está en el commit remoto
+❌ manifest.json no está accesible públicamente
